@@ -28,5 +28,4 @@ android DiskLruCache and memoryCache for image
     }
     
 3：
-
 mImageWorker.loadImage(“YOUR IMG URL”,your ImageView WIDGET );

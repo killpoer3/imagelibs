@@ -14,11 +14,15 @@ android DiskLruCache and memoryCache for image
     }
 2:  
   private void initImageCache(){
+  
         //缓存目录
         ImageCacheParams cacheParams = new ImageCacheParams("http");
+        
         //缓存图片大小
         mImageWorker = new ImageFetcher(getActivity(), 200);
+        
         mImageWorker.setImageCache(ImageCache.findOrCreateCache(getActivity(),cacheParams));
+        
         //LOADING图片
         mImageWorker.setLoadingImage(R.drawable.LOADING);
     }
